@@ -1,12 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:popupmenu/model/Company.dart';
-
-class DropDownPage extends StatefulWidget {
-  @override
-  DropDownState createState() => DropDownState();
-}
-
-class DropDownState extends State<DropDownPage> {
+/*class DropDownState extends State<DropDownPage> {
   List<Company> _companies = Company.getCompanies();
   List<DropdownMenuItem<Company>> _dropdownMenuItems;
   Company _selectedCompany;
@@ -108,4 +100,4 @@ class DropDownState extends State<DropDownPage> {
       ),
     );
   }
-}
+}*/

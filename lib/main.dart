@@ -1,30 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:popupmenu/dropdown.dart';
-import 'package:popupmenu/model/Company.dart';
+import 'package:tutorial/tutorial_app.dart';
 
 void main() {
-  runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  runApp(TutorialApp());
 }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: MyHomePage(),
-    );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+/*class _MyHomePageState extends State<MyHomePage> {
   List<Company> _companies = Company.getCompanies();
   List<PopupMenuItem<Company>> _popupMenuItems;
   Company _selectedCompany;
@@ -133,10 +115,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     Text(
                       '${_selectedCompany.name}',
-                      style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20.0,
-                          color: Colors.green),
+                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.green),
                     ),
                   ],
                 ),
@@ -148,8 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
             alignment: FractionalOffset.bottomCenter,
             child: InkWell(
               onTap: () {
-                Route route =
-                    MaterialPageRoute(builder: (context) => DropDownPage());
+                Route route = MaterialPageRoute(builder: (context) => DropDownPage());
                 Navigator.push(context, route);
               },
               child: Container(
@@ -165,8 +143,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Center(
                   child: Text(
                     "go to dorop down list page",
-                    style: TextStyle(
-                        color: Colors.white, fontWeight: FontWeight.bold),
+                    style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
                   ),
                 ),
               ),
@@ -177,4 +154,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-}
+}*/
